@@ -4,6 +4,7 @@ const cors = require("cors");
 const bookingRoutes = require("./routes/bookingRoutes");
 
 const app = express();
+app.set("json spaces", 2);
 app.use(cors());
 app.use(express.json());
 app.use("/", bookingRoutes);
